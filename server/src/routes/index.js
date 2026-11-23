@@ -1,0 +1,42 @@
+import { Router } from 'express';
+import healthRoutes from './health.routes.js';
+import authRoutes from './auth.routes.js';
+import staffRoutes from './staff.routes.js';
+import categoryRoutes from './category.routes.js';
+import menuItemRoutes from './menuItem.routes.js';
+import tableRoutes from './table.routes.js';
+import publicRoutes from './public.routes.js';
+import orderRoutes from './order.routes.js';
+import callRoutes from './call.routes.js';
+import sessionRoutes from './session.routes.js';
+import paymentRoutes from './payment.routes.js';
+import couponRoutes from './coupon.routes.js';
+import billRoutes from './bill.routes.js';
+import reportRoutes from './report.routes.js';
+import adminRoutes from './admin.routes.js';
+import analyticsRoutes from './analytics.routes.js';
+import aiRoutes from './ai.routes.js';
+import superadminRoutes from './superadmin.routes.js';
+
+const router = Router();
+
+router.use('/health', healthRoutes);
+router.use('/auth', authRoutes);
+router.use('/staff', staffRoutes);
+router.use('/categories', categoryRoutes);
+router.use('/menu-items', menuItemRoutes);
+router.use('/tables', tableRoutes);
+router.use('/public', publicRoutes);
+router.use('/orders', orderRoutes);
+router.use('/calls', callRoutes);
+router.use('/sessions', sessionRoutes);
+router.use('/payments', paymentRoutes);
+router.use('/coupons', couponRoutes);
+router.use('/bill', billRoutes);
+router.use('/reports', reportRoutes);
+router.use('/admin', adminRoutes);
+router.use('/', analyticsRoutes);
+router.use('/', aiRoutes);
+router.use('/', superadminRoutes);
+
+export default router;

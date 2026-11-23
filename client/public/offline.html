@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline — Aapka Waiter</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0B0B0C;
+        color: #fff;
+        font-family: system-ui, -apple-system, sans-serif;
+        text-align: center;
+        padding: 24px;
+      }
+      .card {
+        max-width: 380px;
+        background: #141416;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 28px;
+      }
+      h1 { font-size: 22px; margin-bottom: 8px; }
+      span { color: #E8591A; }
+      p { color: #a1a1aa; font-size: 14px; line-height: 1.5; }
+      button {
+        margin-top: 16px;
+        background: #E8591A;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Aapka <span>waiter</span></h1>
+      <p>You are currently offline. Cached menus remain readable, and queued staff actions will sync automatically when reconnected.</p>
+      <button onclick="window.location.reload()">Retry Connection</button>
+    </div>
+  </body>
+</html>
